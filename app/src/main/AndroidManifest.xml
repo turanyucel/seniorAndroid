@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.senior.nghbrhood">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-configuration android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logofirstpage"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logofirstpage"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NGHBRHood"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".bills"></activity>
+        <activity android:name=".chat" />
+        <activity android:name=".ListShops" />
+        <activity android:name=".addbill" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".MainPage" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver"/>
+    </application>
+
+</manifest>
